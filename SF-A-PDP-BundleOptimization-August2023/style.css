@@ -1,0 +1,88 @@
+/* Global Class for Scoping */
+
+/* .ti2 {} */
+
+/* List of Options */
+
+.variant-wrapper {}
+
+@media (min-width: 700px) {
+	.variant-wrapper {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #e8e8e1;
+	}
+}
+
+@media (min-width: 768px) {
+	.variant-wrapper {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+}
+
+@media (min-width: 1440px) {
+	.variant-wrapper {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #e8e8e1;
+	}
+}
+
+	/* `fieldset` */
+
+	.variant-input-wrap {
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 25px;
+		row-gap: 18px;
+		margin: 0;
+		/* background: pink; */
+	}
+
+	@media (min-width: 700px) {
+		.variant-input-wrap {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.variant-input-wrap {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (min-width: 1440px) {
+		.variant-input-wrap {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+		/* Individual Option */
+
+		.variant-input {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			box-shadow: 0 0 0 1px #e8e8e1 inset;
+			border-radius: 7px;
+			cursor: pointer;
+			text-align: left;
+			/* background: pink; */
+		}
+
+		.variant-input--is-selected {
+			box-shadow: 0 0 0 2px #000000 inset;
+		}
+
+			.variant-input .variant__thumbnail {
+				height: 60px;
+				margin-right: 15px;
+			}
+
+			.variant-input label {
+				position: static;
+				margin: 0 !important;
+				padding: 0;
+				font-size: 14px;
+				line-height: 1.2142857143;
+				box-shadow: none;
+			}
